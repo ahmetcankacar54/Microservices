@@ -1,6 +1,6 @@
-package com.kodlama.io.inventory_service.entities;
+package com.kodlama.io.inventory_service.business.dto.responses.get;
 
-import jakarta.persistence.*;
+import com.kodlama.io.inventory_service.entities.State;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -8,23 +8,15 @@ import lombok.Setter;
 
 import java.util.UUID;
 
-@Entity
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "cars")
-public class Car {
-    @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
+public class GetAllCarsResponse {
     private UUID id;
+    private String name;
     private int modelYear;
     private String plate;
-    @Enumerated
     private State state;
     private double dailyPrice;
-
-    @ManyToOne
-    @JoinColumn(name = "model_id")
-    private Model model;
 }
