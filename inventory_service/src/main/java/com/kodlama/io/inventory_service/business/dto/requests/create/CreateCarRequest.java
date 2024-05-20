@@ -1,6 +1,6 @@
 package com.kodlama.io.inventory_service.business.dto.requests.create;
 
-import com.kodlama.io.inventory_service.entities.State;
+
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -17,9 +17,7 @@ import java.util.UUID;
 @NoArgsConstructor
 public class CreateCarRequest {
     @NotNull
-    @NotBlank
-    private UUID id;
-    private String name;
+    private UUID modelId;
     @Min(2000)
     // TODO: NotFuture custom annotation
     private int modelYear;

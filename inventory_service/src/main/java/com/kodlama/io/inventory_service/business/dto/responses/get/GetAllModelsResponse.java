@@ -13,5 +13,6 @@ import java.util.UUID;
 @NoArgsConstructor
 public class GetAllModelsResponse {
     private UUID id;
+    private UUID brandId;
     private String name;
 }

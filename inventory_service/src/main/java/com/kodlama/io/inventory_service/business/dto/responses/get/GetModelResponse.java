@@ -13,6 +13,7 @@ import java.util.UUID;
 @NoArgsConstructor
 public class GetModelResponse {
     private UUID id;
+    private UUID brandId;
     private String name;
 }
 

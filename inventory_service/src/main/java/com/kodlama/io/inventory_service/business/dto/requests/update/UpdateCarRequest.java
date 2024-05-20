@@ -17,9 +17,7 @@ import java.util.UUID;
 @NoArgsConstructor
 public class UpdateCarRequest {
     @NotNull
-    @NotBlank
-    private UUID id;
-    private String name;
+    private UUID modelId;
     @Min(2000)
     // TODO: NotFuture custom annotation
     private int modelYear;

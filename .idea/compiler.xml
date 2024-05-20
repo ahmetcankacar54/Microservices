@@ -9,12 +9,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="inventory_service" />
         <module name="common_package" />
+        <module name="filter_service" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="common_package" options="-parameters" />
+      <module name="filter_service" options="-parameters" />
       <module name="inventory_service" options="-parameters" />
     </option>
   </component>

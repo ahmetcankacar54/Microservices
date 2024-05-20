@@ -8,11 +8,12 @@ import com.kodlama.io.inventory_service.business.dto.responses.get.GetModelRespo
 import com.kodlama.io.inventory_service.business.dto.responses.update.UpdateModelResponse;
 
 import java.util.List;
+import java.util.UUID;
 
 public interface ModelService {
     List<GetAllModelsResponse> getAll();
-    GetModelResponse getById(int id);
+    GetModelResponse getById(UUID id);
     CreateModelResponse add(CreateModelRequest request);
-    UpdateModelResponse update(int id, UpdateModelRequest request);
-    void delete(int id);
+    UpdateModelResponse update(UUID id, UpdateModelRequest request);
+    void delete(UUID id);
 }
