@@ -8,6 +8,11 @@
         <option value="$USER_HOME$/Downloads/inventory_service/pom.xml" />
         <option value="$PROJECT_DIR$/common_package/pom.xml" />
         <option value="$PROJECT_DIR$/filter_service/pom.xml" />
+        <option value="$PROJECT_DIR$/discovery_server/pom.xml" />
+        <option value="$PROJECT_DIR$/discovery-server/pom.xml" />
+        <option value="$PROJECT_DIR$/filter-service/pom.xml" />
+        <option value="$PROJECT_DIR$/inventory-service/pom.xml" />
+        <option value="$PROJECT_DIR$/common-package/pom.xml" />
       </list>
     </option>
   </component>

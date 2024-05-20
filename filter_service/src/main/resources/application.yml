@@ -1,7 +1,0 @@
-spring:
-  data:
-    mongodb:
-      database: filterdb
-      uri: mongodb://localhost:27017
-      username: ahmetkacar
-      password: 12345
